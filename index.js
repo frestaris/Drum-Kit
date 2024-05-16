@@ -1,6 +1,10 @@
 // DETECTING BUTTONS
 
 const buttons = document.querySelectorAll(".drum");
+const currentYear = new Date().getFullYear();
+document.getElementById(
+  "copyright"
+).innerText = `© ${currentYear}. All Rights Reserved.`;
 
 buttons.forEach((button) => {
   button.addEventListener("click", handleClick);
